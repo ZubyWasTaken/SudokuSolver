@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93277808280BBEF300FA4EE1 /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93277807280BBEF300FA4EE1 /* Solver.swift */; };
 		93CE7E6927C6A6C900EDBC34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7E6827C6A6C900EDBC34 /* AppDelegate.swift */; };
 		93CE7E6B27C6A6C900EDBC34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7E6A27C6A6C900EDBC34 /* SceneDelegate.swift */; };
 		93CE7E6D27C6A6C900EDBC34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7E6C27C6A6C900EDBC34 /* ViewController.swift */; };
 		93CE7E7027C6A6C900EDBC34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CE7E6E27C6A6C900EDBC34 /* Main.storyboard */; };
 		93CE7E7227C6A6CA00EDBC34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CE7E7127C6A6CA00EDBC34 /* Assets.xcassets */; };
 		93CE7E7527C6A6CA00EDBC34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CE7E7327C6A6CA00EDBC34 /* LaunchScreen.storyboard */; };
+		93DC97A42808FC4D00CFFB76 /* SudokuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC97A32808FC4D00CFFB76 /* SudokuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93277807280BBEF300FA4EE1 /* Solver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solver.swift; sourceTree = "<group>"; };
 		93CE7E6527C6A6C900EDBC34 /* SudokuSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CE7E6827C6A6C900EDBC34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93CE7E6A27C6A6C900EDBC34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		93CE7E7127C6A6CA00EDBC34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93CE7E7427C6A6CA00EDBC34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93CE7E7627C6A6CA00EDBC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DC97A32808FC4D00CFFB76 /* SudokuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93277809280CEBFD00FA4EE1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93CE7E6C27C6A6C900EDBC34 /* ViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		9327780A280CEC3700FA4EE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93DC97A32808FC4D00CFFB76 /* SudokuView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9327780B280CEC4500FA4EE1 /* Solver */ = {
+			isa = PBXGroup;
+			children = (
+				93277807280BBEF300FA4EE1 /* Solver.swift */,
+			);
+			name = Solver;
+			sourceTree = "<group>";
+		};
 		93CE7E5C27C6A6C900EDBC34 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +84,11 @@
 		93CE7E6727C6A6C900EDBC34 /* SudokuSolver */ = {
 			isa = PBXGroup;
 			children = (
+				93277809280CEBFD00FA4EE1 /* View Controller */,
+				9327780A280CEC3700FA4EE1 /* Views */,
+				9327780B280CEC4500FA4EE1 /* Solver */,
 				93CE7E6827C6A6C900EDBC34 /* AppDelegate.swift */,
 				93CE7E6A27C6A6C900EDBC34 /* SceneDelegate.swift */,
-				93CE7E6C27C6A6C900EDBC34 /* ViewController.swift */,
 				93CE7E6E27C6A6C900EDBC34 /* Main.storyboard */,
 				93CE7E7127C6A6CA00EDBC34 /* Assets.xcassets */,
 				93CE7E7327C6A6CA00EDBC34 /* LaunchScreen.storyboard */,
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93277808280BBEF300FA4EE1 /* Solver.swift in Sources */,
 				93CE7E6D27C6A6C900EDBC34 /* ViewController.swift in Sources */,
+				93DC97A42808FC4D00CFFB76 /* SudokuView.swift in Sources */,
 				93CE7E6927C6A6C900EDBC34 /* AppDelegate.swift in Sources */,
 				93CE7E6B27C6A6C900EDBC34 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,11 +324,14 @@
 				DEVELOPMENT_TEAM = 7Y62KL278K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SudokuSolver/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need permission to use your camera to take a photo!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +341,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,11 +355,14 @@
 				DEVELOPMENT_TEAM = 7Y62KL278K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SudokuSolver/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need permission to use your camera to take a photo!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
